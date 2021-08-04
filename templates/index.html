@@ -226,12 +226,16 @@
                         <div class="single-place mb-30">
                             <div class="place-img">
                                 <img src="{{baseUrl}}/{{dest.img}}" alt="">
+                                
                             </div>
                             <div class="place-cap">
                                 <div class="place-cap-top">
                                     <span><i class="fas fa-star"></i><span>8.0 Superb</span> </span>
                                     <h3><a href="#">{{dest.name}}</a></h3>
                                     <p>{{dest.desc}}</p>
+                                    {% if dest.offer%}
+                                    <p>Special Offer Available</p>
+                                     {% endif %}
                                     <p class="dolor">${{dest.price}} <span>/ Per Person</span></p>
                                 </div>
                                 <div class="place-cap-bottom">
