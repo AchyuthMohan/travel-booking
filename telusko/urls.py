@@ -20,6 +20,6 @@ from django.urls.conf import include
 urlpatterns = [
     path('admin/', admin.site.urls),
     
-    path('',include('travello.urls'))
+    path('user/',include('travello.urls'))
 
 ]
